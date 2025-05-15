@@ -106,33 +106,13 @@ The three implementations explore different approaches to embedding generation, 
 - **Hardware**: For local embedding generation, a CPU is sufficient, but a GPU can speed up Sentence Transformer inference.
 
 ## Setup Instructions
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-username/rag-chatbot-hard-things.git
-   cd rag-chatbot-hard-things
-   ```
 
-2. **Install Dependencies**:
-   Create a virtual environment (recommended):
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-   Install required packages:
-   ```bash
-   pip install openai faiss-cpu pydantic PyPDF2 tiktoken sentence-transformers
-   ```
-   Alternatively, use the provided `requirements.txt`:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Prepare the PDF**:
+1. **Prepare the PDF**:
    - Obtain a text-based PDF of *The Hard Thing About Hard Things*.
    - For Colab, upload the PDF when prompted by the script.
    - For local execution, place the PDF in the project directory and update the script's `pdf_path` variable (e.g., `pdf_path = "the_hard_thing_about_hard_things.pdf"`).
 
-4. **Set Up OpenAI API Key**:
+2. **Set Up OpenAI API Key**:
    - Store your OpenAI API key securely.
    - The scripts prompt for the key at runtime, but you can set it as an environment variable for convenience:
      ```bash
@@ -177,8 +157,11 @@ The three implementations explore different approaches to embedding generation, 
 
 ## Running Locally
  1. Click following links:
+   
     a) Chatbot 1: https://colab.research.google.com/drive/1q3HkazH3BA20lCAMsyHDe5epU1EfRNB1
+
     b) Chatbot 2: https://colab.research.google.com/drive/1uFny5sRSHgyDjEY2wPqFnakAuDvg1XPL
+
     c) Chatbot 3: https://colab.research.google.com/drive/1dwJMM5i4m_2FDQqQU6ynSG2WgxD4gvoL
 
 ## Usage
